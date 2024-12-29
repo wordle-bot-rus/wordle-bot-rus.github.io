@@ -1,0 +1,169 @@
+/* Shared styles for groups and solutions containers */
+.groups-comparison,
+.solutions-container {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.groups-section,
+.solution-section {
+    flex: 1;
+    min-width: 300px;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.groups-section h3,
+.solution-section h3 {
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+/* Guess history styles */
+.guesses-history {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Guess display styles */
+.guess-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.guess-analysis {
+    display: flex;
+    gap: 8px;
+}
+
+.letter {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+.empty-guess {
+    display: flex;
+    gap: 8px;
+}
+
+.letter.empty {
+    background-color: #e9ecef;
+    border: 2px dashed #ced4da;
+}
+
+.correct {
+    background-color: #6aaa64;
+    transform: scale(1.05);
+}
+
+.wrong-position {
+    background-color: #c9b458;
+}
+
+.incorrect {
+    background-color: #787c7e;
+}
+
+.empty-row {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Group item styles */
+.group-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.group-pattern {
+    display: flex;
+    gap: 5px;
+}
+
+.group-words {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Button styles */
+.btn {
+    transition: all 0.2s ease;
+    padding: 8px 16px;
+    font-weight: 500;
+}
+
+.btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Alert styles */
+.alert {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    color: #856404;
+}
+
+/* Container responsive styling */
+.analysis-container,
+.computer-solution-container {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .analysis-container,
+    .computer-solution-container {
+        padding: 0.5rem;
+    }
+}
+
+/* Utility classes */
+.mt-3 {
+    margin-top: 1rem;
+}
