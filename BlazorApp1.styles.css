@@ -76,6 +76,14 @@ main[b-g99638wy9i] {
         padding-right: 1.5rem !important;
     }
 }
+
+/* Add mobile-specific padding */
+@media (max-width: 640.98px) {
+    .top-row[b-g99638wy9i], article[b-g99638wy9i] {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
+}
 /* /Layout/NavMenu.razor.rz.scp.css */
 .navbar-toggler[b-j5518nm3vt] {
     background-color: rgba(255, 255, 255, 0.1);
@@ -369,4 +377,90 @@ main[b-g99638wy9i] {
     background-color: #fff3cd;
     border: 1px solid #ffeeba;
     color: #856404;
+}
+
+/* Analysis container responsive styling */
+.analysis-container[b-fa49wwvgry] {
+    padding: 1rem;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .analysis-container[b-fa49wwvgry] {
+        padding: 0.5rem;
+    }
+}
+
+/* Stats table responsive styling */
+.stats-table[b-fa49wwvgry] {
+    width: 100%;
+    overflow-x: auto;
+    margin: 1rem 0;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+.stats-table table[b-fa49wwvgry] {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.stats-table th:first-child[b-fa49wwvgry],
+.stats-table td:first-child[b-fa49wwvgry] {
+    width: 25%;
+}
+
+.stats-table th:not(:first-child)[b-fa49wwvgry],
+.stats-table td:not(:first-child)[b-fa49wwvgry] {
+    width: 37.5%;
+}
+
+@media (max-width: 768px) {
+    .stats-table th:first-child[b-fa49wwvgry],
+    .stats-table td:first-child[b-fa49wwvgry] {
+        width: 30%;
+    }
+
+    .stats-table th:not(:first-child)[b-fa49wwvgry],
+    .stats-table td:not(:first-child)[b-fa49wwvgry] {
+        width: 35%;
+    }
+}
+
+.stats-table th[b-fa49wwvgry],
+.stats-table td[b-fa49wwvgry] {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+.stats-table td strong[b-fa49wwvgry] {
+    word-break: break-all;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+    .stats-table[b-fa49wwvgry] {
+        margin: 0.5rem -0.5rem;  /* Negative margin to counter parent padding */
+    }
+
+    .stats-table th[b-fa49wwvgry],
+    .stats-table td[b-fa49wwvgry] {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .computer-guess-navigation[b-fa49wwvgry] {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Better value highlighting */
+.better-value[b-fa49wwvgry] {
+    color: #28a745;
+    font-weight: bold;
 }
