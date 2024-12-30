@@ -169,38 +169,43 @@ main[b-g99638wy9i] {
     }
 }
 /* /Pages/Analysis.razor.rz.scp.css */
-.computer-guess-navigation[b-fa49wwvgry] {
+.computer-guess-select[b-fa49wwvgry] {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 8px;
+    justify-content: center;
     min-height: 40px;
 }
 
-.computer-guess-navigation button[b-fa49wwvgry] {
-    padding: 8px 10px;
-    font-size: 14px;
+.computer-guess-select select[b-fa49wwvgry] {
+    width: 100%;
     line-height: 1.2;
-    min-width: 30px;
-    max-width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 0.75rem 1.5rem 0.75rem 0.75rem;
+    border: 1px solid #ced4da;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.25rem center;
+    background-size: 16px 12px;
 }
 
-.computer-guess-navigation button:disabled[b-fa49wwvgry] {
-    opacity: 0.5;
-    cursor: not-allowed;
+.computer-guess-select select:focus[b-fa49wwvgry] {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
 }
 
-.computer-guess-navigation strong[b-fa49wwvgry] {
-    min-width: 80px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 40px;
+.visually-hidden[b-fa49wwvgry] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 .loading-container[b-fa49wwvgry] {
@@ -247,9 +252,106 @@ main[b-g99638wy9i] {
     gap: 1.5rem;
 }
 
+/* Guesses history styling */
+.guesses-history[b-fa49wwvgry] {
+    margin: 0.5rem 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.guesses-history table[b-fa49wwvgry] {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin: 0;
+}
 
 
+.guesses-history th[b-fa49wwvgry],
+.guesses-history td[b-fa49wwvgry] {
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
 
+.guesses-history tr:last-child td[b-fa49wwvgry] {
+    border-bottom: none;
+}
+
+.guesses-history th[b-fa49wwvgry] {
+    background-color: #e9ecef;
+    font-weight: bold;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.9em;
+}
+
+.guesses-history th:first-child[b-fa49wwvgry] {
+    /*width: 80%;*/
+    min-width: 8rem;
+    padding: 0.25rem;
+}
+
+.guesses-history th:not(:first-child)[b-fa49wwvgry] {
+    /*width: 10%;*/
+    width: 4rem;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.metric-value[b-fa49wwvgry] {
+    /*background-color: #f8f9fa;*/
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.guesses-history tr:hover td[b-fa49wwvgry] {
+    background-color: #f8f9fa;
+}
+
+.guess-analysis[b-fa49wwvgry] {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+}
+
+.empty-guess[b-fa49wwvgry] {
+    opacity: 0.5;
+}
+
+.empty-row td[b-fa49wwvgry] {
+    background-color: #fafafa;
+}
+
+.empty-row:hover td[b-fa49wwvgry] {
+    background-color: #fafafa !important;
+}
+
+/* Responsive styling */
+@media (max-width: 576px) {
+    .guesses-history[b-fa49wwvgry] {
+        margin: 0.25rem 0;
+        font-size: 0.9em;
+    }
+
+    .guesses-history td:first-child[b-fa49wwvgry] {
+        padding: 0.15rem;
+    }
+
+    .guesses-history td:not(:first-child)[b-fa49wwvgry] {
+        padding: 0.25rem;
+    }
+
+    .metric-value[b-fa49wwvgry] {
+        padding: 0.25rem;
+    }
+
+}
 
 /* Stats table responsive styling */
 .stats-table[b-fa49wwvgry] {
@@ -304,13 +406,22 @@ main[b-g99638wy9i] {
 /* Mobile-specific adjustments */
 @media (max-width: 768px) {
     .stats-table[b-fa49wwvgry] {
-        margin: 0.5rem -0.5rem;  /* Negative margin to counter parent padding */
+        padding: 0;
     }
 
     .stats-table th[b-fa49wwvgry],
     .stats-table td[b-fa49wwvgry] {
         padding: 0.5rem;
         font-size: 0.9rem;
+    }
+
+    .computer-guess-select select[b-fa49wwvgry] {
+        padding: 0.75rem 0.25rem;
+        font-size: 0.9rem;
+        margin: -0.25rem;  /* Negative margin to compensate for parent cell padding */
+        background-position: right center;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-opacity='0.5' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+
     }
 
     .computer-guess-navigation[b-fa49wwvgry] {

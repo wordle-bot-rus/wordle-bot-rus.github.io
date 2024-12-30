@@ -25,64 +25,48 @@
     text-align: center;
 }
 
-/* Guess history styles */
-.guesses-history {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-/* Guess display styles */
-.guess-row {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5px;
-}
-
-.guess-analysis {
-    display: flex;
-    gap: 8px;
-}
-
+/* Letter styles */
 .letter {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     border-radius: 4px;
-    font-weight: bold;
+    font-weight: 900;
+    font-size: 0.9em;
     color: white;
+    margin: 0 1px;
     transition: all 0.2s ease;
-}
-
-.empty-guess {
-    display: flex;
-    gap: 8px;
-}
-
-.letter.empty {
-    background-color: #e9ecef;
-    border: 2px dashed #ced4da;
-}
-
-.correct {
-    background-color: #6aaa64;
-    transform: scale(1.05);
-}
-
-.wrong-position {
-    background-color: #c9b458;
-}
-
-.incorrect {
-    background-color: #787c7e;
-}
-
-.empty-row {
     animation: fadeIn 0.3s ease-in-out;
 }
 
+.letter.correct {
+    background-color: #6aaa64;
+}
+
+.letter.present {
+    background-color: #c9b458;
+}
+
+.letter.absent {
+    background-color: #787c7e;
+}
+
+.letter.empty {
+    background-color: #d3d6da;
+    border: 2px solid #d3d6da;
+}
+
+@media (max-width: 576px) {
+    .letter {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9em;
+    }
+}
+
+/* Animation */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -92,6 +76,30 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.guess-row {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.empty-row {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Guess display styles */
+.guess-analysis {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+}
+
+.empty-guess {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
 }
 
 /* Group item styles */
