@@ -260,6 +260,7 @@ main[b-g99638wy9i] {
     max-width: 100%;
     border: 1px solid #ddd;
     border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .guesses-history table[b-fa49wwvgry] {
@@ -291,14 +292,18 @@ main[b-g99638wy9i] {
 }
 
 .guesses-history th:first-child[b-fa49wwvgry] {
-    /*width: 80%;*/
     min-width: 8rem;
     padding: 0.25rem;
 }
 
-.guesses-history th:not(:first-child)[b-fa49wwvgry] {
-    /*width: 10%;*/
-    width: 4rem;
+.guesses-history th:nth-child(2)[b-fa49wwvgry] {
+    width: 6rem;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.guesses-history th:nth-child(n+3)[b-fa49wwvgry] {
+    width: 6rem;
     font-weight: bold;
     font-size: 0.9em;
 }
@@ -335,7 +340,6 @@ main[b-g99638wy9i] {
 /* Responsive styling */
 @media (max-width: 576px) {
     .guesses-history[b-fa49wwvgry] {
-        margin: 0.25rem 0;
         font-size: 0.9em;
     }
 
@@ -405,8 +409,17 @@ main[b-g99638wy9i] {
 
 /* Mobile-specific adjustments */
 @media (max-width: 768px) {
+    .guesses-history[b-fa49wwvgry] {
+        margin: 0;
+    }
+
+    .step-navigation[b-fa49wwvgry] {
+        margin: 0;
+    }
+
     .stats-table[b-fa49wwvgry] {
         padding: 0;
+        margin: 0;
     }
 
     .stats-table th[b-fa49wwvgry],
@@ -427,6 +440,14 @@ main[b-g99638wy9i] {
     .computer-guess-navigation[b-fa49wwvgry] {
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .guesses-history th:nth-child(2)[b-fa49wwvgry] {
+        width: 4.5rem;
+    }
+
+    .guesses-history th:nth-child(n+3)[b-fa49wwvgry] {
+        width: 4rem;
     }
 }
 
