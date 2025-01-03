@@ -37,7 +37,7 @@ main[b-g99638wy9i] {
         text-overflow: ellipsis;
     }
 
-@media (max-width: 640.98px) {
+@media (max-width: 767.98px) {
     .top-row[b-g99638wy9i] {
         justify-content: space-between;
     }
@@ -47,13 +47,13 @@ main[b-g99638wy9i] {
     }
 }
 
-@media (min-width: 641px) {
+@media (min-width: 768px) {
     .page[b-g99638wy9i] {
         flex-direction: row;
     }
 
     .sidebar[b-g99638wy9i] {
-        width: 250px;
+        width: 220px;
         height: 100vh;
         position: sticky;
         top: 0;
@@ -80,8 +80,8 @@ main[b-g99638wy9i] {
 /* Add mobile-specific padding */
 @media (max-width: 640.98px) {
     .top-row[b-g99638wy9i], article[b-g99638wy9i] {
-        padding-left: 0.5rem !important;
-        padding-right: 0.5rem !important;
+        padding-left: 0.3rem !important;
+        padding-right: 0.3rem !important;
     }
 }
 /* /Layout/NavMenu.razor.rz.scp.css */
@@ -152,7 +152,7 @@ main[b-g99638wy9i] {
     color: white;
 }
 
-@media (min-width: 641px) {
+@media (min-width: 768px) {
     .navbar-toggler[b-j5518nm3vt] {
         display: none;
     }
