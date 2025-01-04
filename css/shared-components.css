@@ -1,0 +1,40 @@
+/* Common loading and progress components */
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.spinner {
+    border: 4px solid var(--bs-secondary-bg);
+    border-top: 4px solid var(--bs-primary);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.progress {
+    width: 100%;
+    max-width: 300px;
+    height: 20px;
+    background-color: var(--bs-secondary-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: var(--bs-primary);
+    transition: width 0.3s ease-in-out;
+}

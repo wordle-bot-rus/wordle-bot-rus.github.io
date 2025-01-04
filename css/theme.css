@@ -1,0 +1,138 @@
+[data-bs-theme=dark] {
+    --bs-body-bg: #212529;
+    --bs-body-color: #dee2e6;
+    --bs-body-color-rgb: 222, 226, 230;
+    --bs-body-bg-rgb: 33, 37, 41;
+    --bs-emphasis-color: #fff;
+    --bs-emphasis-color-rgb: 255, 255, 255;
+    --bs-secondary-color: rgba(222, 226, 230, 0.75);
+    --bs-secondary-color-rgb: 222, 226, 230;
+    --bs-secondary-bg: #343a40;
+    --bs-secondary-bg-rgb: 52, 58, 64;
+    --bs-tertiary-color: rgba(222, 226, 230, 0.5);
+    --bs-tertiary-bg: #2b3035;
+
+    /* Custom theme colors for dark mode */
+    --theme-section-bg: #343a40;
+    --theme-section-shadow: rgba(0, 0, 0, 0.2);
+    --theme-heading-color: #dee2e6;
+    --theme-text-color: #dee2e6;
+    --theme-secondary-text: #adb5bd;
+    --theme-border-color: #495057;
+    --theme-hover-bg: #495057;
+
+    /* Letter colors for dark mode */
+    --letter-correct-bg: #538d4e;
+    --letter-present-bg: #b59f3b;
+    --letter-absent-bg: #3a3a3c;
+    --letter-empty-bg: #404040;
+
+    /* Stats colors for dark mode */
+    --stats-better-bg: #1b4529;
+    --stats-better-color: #2ea043;
+    --stats-table-bg: #2b3035;
+    --stats-header-bg: #343a40;
+
+    /* Button colors for dark mode */
+    --theme-button-bg: #3578c7;
+    --theme-button-border: #3578c7;
+    --bs-primary: #1b6ec2;
+    --bs-primary-rgb: 27, 110, 50;
+    --bs-primary-text-emphasis: #6ea8fe;
+    --bs-secondary-text-emphasis: #a7acb1;
+    --bs-success-text-emphasis: #75b798;
+    --bs-danger-text-emphasis: #ea868f;
+    --bs-warning-text-emphasis: #ffda6a;
+    --bs-info-text-emphasis: #6edff6;
+    --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
+    --bs-navbar-active-color: #fff;
+    --bs-border-color: #495057;
+    --bs-link-color: #6ea8fe;
+    --bs-link-hover-color: #8bb9fe;
+}
+
+[data-bs-theme=light] {
+    --bs-body-bg: #ffffff;
+    --bs-body-color: #212529;
+    --bs-body-color-rgb: 33, 37, 41;
+    --bs-body-bg-rgb: 255, 255, 255;
+    --bs-emphasis-color: #000;
+    --bs-emphasis-color-rgb: 0, 0, 0;
+    --bs-secondary-color: rgba(33, 37, 41, 0.75);
+    --bs-secondary-color-rgb: 33, 37, 41;
+    --bs-secondary-bg: #e9ecef;
+    --bs-secondary-bg-rgb: 233, 236, 239;
+    --bs-tertiary-color: rgba(33, 37, 41, 0.5);
+    --bs-tertiary-bg: #f8f9fa;
+
+    /* Custom theme colors for light mode */
+    --theme-section-bg: #f8f9fa;
+    --theme-section-shadow: rgba(0, 0, 0, 0.1);
+    --theme-heading-color: #2c3e50;
+    --theme-text-color: #212529;
+    --theme-secondary-text: #495057;
+    --theme-border-color: #dee2e6;
+    --theme-hover-bg: #f8f9fa;
+
+    /* Letter colors for light mode */
+    --letter-correct-bg: #6aaa64;
+    --letter-present-bg: #c9b458;
+    --letter-absent-bg: #787c7e;
+    --letter-empty-bg: #d3d6da;
+
+    /* Stats colors for light mode */
+    --stats-better-bg: #d4edda;
+    --stats-better-color: #28a745;
+    --stats-table-bg: #ffffff;
+    --stats-header-bg: #f8f9fa;
+
+    /* Button colors for light mode */
+    --theme-button-bg: #4a90e2;
+    --theme-button-border: #4a90e2;
+    --bs-primary: #1b6ec2;
+    --bs-primary-rgb: 27, 110, 50;
+    --bs-primary-text-emphasis: #052c65;
+    --bs-secondary-text-emphasis: #2b2f32;
+    --bs-success-text-emphasis: #0a3622;
+    --bs-danger-text-emphasis: #58151c;
+    --bs-warning-text-emphasis: #664d03;
+    --bs-info-text-emphasis: #055160;
+    --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
+    --bs-navbar-active-color: #fff;
+    --bs-border-color: #dee2e6;
+    --bs-link-color: #0d6efd;
+    --bs-link-hover-color: #0a58ca;
+}
+
+.theme-switch {
+    margin-top: auto;
+    border-top: 1px solid rgba(255,255,255,0.37);
+    padding: 1rem;
+}
+
+.theme-switch .btn-group {
+    width: 100%;
+}
+
+.theme-switch .btn {
+    flex: 1;
+    color: rgba(255, 255, 255, 0.55);
+    border-color: rgba(255,255,255,0.37);
+}
+
+.btn-group > .btn-outline-primary:nth-of-type(2) {
+    border-left: none;
+    border-right: none;
+}
+
+.theme-switch .btn:hover {
+    color: var(--bs-navbar-hover-color);
+    background-color: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.37);
+}
+
+.theme-switch .btn-check:checked + .btn {
+    background-color: rgba(255,255,255,0.37);
+    color: var(--bs-navbar-active-color);
+    border-color: rgba(255,255,255,0.37);
+}
