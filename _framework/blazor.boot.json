@@ -1,9 +1,9 @@
 {
   "mainAssemblyName": "BlazorApp1",
   "resources": {
-    "hash": "sha256-x59A+KLIyUxBXNQz7IgyK4nM6olokRmlHbGmyEP+Bn8=",
+    "hash": "sha256-uRW/ILoeVwfwQH922WwyWsnWxft264BYfbOgq8ga3rw=",
     "fingerprinting": {
-      "BlazorApp1.3iqu8rhfos.wasm": "BlazorApp1.wasm",
+      "BlazorApp1.uug7fgj7gl.wasm": "BlazorApp1.wasm",
       "Microsoft.AspNetCore.Components.u66ildici3.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Web.xron9hpa2w.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
       "Microsoft.AspNetCore.Components.WebAssembly.l02bb0kaad.wasm": "Microsoft.AspNetCore.Components.WebAssembly.wasm",
@@ -33,15 +33,15 @@
       "System.Private.CoreLib.4y6q5efe8r.wasm": "System.Private.CoreLib.wasm",
       "System.Private.Uri.zkwczu8clt.wasm": "System.Private.Uri.wasm",
       "System.Runtime.InteropServices.JavaScript.3uvku0ibnu.wasm": "System.Runtime.InteropServices.JavaScript.wasm",
-      "System.Runtime.g2u3kb231a.wasm": "System.Runtime.wasm",
+      "System.Runtime.ev7ibp46dk.wasm": "System.Runtime.wasm",
       "System.Text.Encodings.Web.yl4mr44dx2.wasm": "System.Text.Encodings.Web.wasm",
       "System.Text.Json.1t09zpdrk8.wasm": "System.Text.Json.wasm",
       "System.Text.RegularExpressions.gl65p7jdfx.wasm": "System.Text.RegularExpressions.wasm",
       "System.Threading.cjrcei28ym.wasm": "System.Threading.wasm",
       "System.Web.HttpUtility.072zm64hke.wasm": "System.Web.HttpUtility.wasm",
-      "WordleAnalyzer.aufus2pxcj.wasm": "WordleAnalyzer.wasm",
+      "WordleAnalyzer.6rxsjn4244.wasm": "WordleAnalyzer.wasm",
       "dotnet.native.6pm6mcbubu.js": "dotnet.native.js",
-      "dotnet.native.ekdul86y4n.wasm": "dotnet.native.wasm",
+      "dotnet.native.g0mn5e46ha.wasm": "dotnet.native.wasm",
       "dotnet.js": "dotnet.js",
       "dotnet.runtime.o8gq1i8bk6.js": "dotnet.runtime.js",
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
@@ -55,7 +55,7 @@
       "dotnet.runtime.o8gq1i8bk6.js": "sha256-uD1t4tsPtmIHsx30SC4OztehGGaHVDksFD38rL2e3P4="
     },
     "wasmNative": {
-      "dotnet.native.ekdul86y4n.wasm": "sha256-LtWTMi9m1WEyS+54R8yJWsESYR1UgoPQKHDGzI6x4gg="
+      "dotnet.native.g0mn5e46ha.wasm": "sha256-0FPPT7CY/1u35CVX3dnqoK3eTuckGonlFhL3fhDWbcI="
     },
     "icu": {
       "icudt_CJK.tjcz0u77k5.dat": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
@@ -63,7 +63,7 @@
       "icudt_no_CJK.lfu7j35m59.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs="
     },
     "coreAssembly": {
-      "BlazorApp1.3iqu8rhfos.wasm": "sha256-qwXQyklKiulIt0gSksVayW0ahYItTSwZNcC8DU0ekzg=",
+      "BlazorApp1.uug7fgj7gl.wasm": "sha256-6g+atFvQyviFr/ieZl07C9y4F8Z8K6Ux9e7CKZ3ApEQ=",
       "Microsoft.AspNetCore.Components.u66ildici3.wasm": "sha256-KmfGZoDqWHDjbcMXb14AtfX4BKKJb8d67oV1CI4FWgs=",
       "Microsoft.AspNetCore.Components.Web.xron9hpa2w.wasm": "sha256-04V6dE3Nkzj7JxUTRFjG9yJiU2/0bi3aqC2QHDlDiOo=",
       "Microsoft.AspNetCore.Components.WebAssembly.l02bb0kaad.wasm": "sha256-9Yn7CDOpV3IPuUKbeIzOxf5HYbQNLLrIdNCkf1ACX54=",
@@ -93,13 +93,13 @@
       "System.Private.CoreLib.4y6q5efe8r.wasm": "sha256-VM2qgI8ItwSn1EfAw7BlgOYiBk4WNgtIj7liDcYO5ug=",
       "System.Private.Uri.zkwczu8clt.wasm": "sha256-8+rlv2QFMWUyMDOlmwZs1xRb8Q4vK4pwRyjO2iWwGLE=",
       "System.Runtime.InteropServices.JavaScript.3uvku0ibnu.wasm": "sha256-K5wa4QwWB8A0OrHM4yWK86Nl6ItEv9c3ctAASLMYLKo=",
-      "System.Runtime.g2u3kb231a.wasm": "sha256-CMVV7tfcut2Rkc79rqiEbX3pqvUUtCPT9i4j+1cw19M=",
+      "System.Runtime.ev7ibp46dk.wasm": "sha256-pljwOxZg9h+82Wrjwjxx1KSxzuiyCEBLIXB9vbO/KMA=",
       "System.Text.Encodings.Web.yl4mr44dx2.wasm": "sha256-1sv8ewnAaFREu/srg+18StUgRPSRKru+9APS3e24kSs=",
       "System.Text.Json.1t09zpdrk8.wasm": "sha256-q/yF9J77WOTdykg5HfkJdVRc27lLHz+DGmvUagYtiAM=",
       "System.Text.RegularExpressions.gl65p7jdfx.wasm": "sha256-XKqW+TrmS4TjaNifmwb+yfc9w2BWkr3dUjq0xmJYmEw=",
       "System.Threading.cjrcei28ym.wasm": "sha256-aIx5rnPej8hcc5oeMQsaB4zHJDz9pje2l1AYFmX3mMw=",
       "System.Web.HttpUtility.072zm64hke.wasm": "sha256-JNwY9ymWcfzQOoEPDizXA2d7Uik3Ehq57OVHW6mg4ww=",
-      "WordleAnalyzer.aufus2pxcj.wasm": "sha256-sl8fYV6w1mcknE2Eh5/sy3PhKufPQ8DTdFT5o9UtAmE="
+      "WordleAnalyzer.6rxsjn4244.wasm": "sha256-4ghN2G8jDpdxZtnS63p8ZjbmQCPk9bBrr3Kw1Bl6CW4="
     },
     "assembly": {}
   },
